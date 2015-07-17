@@ -8,4 +8,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.query());
 
 app.use(express.static(path.join(__dirname, './www')));
-app.listen(9417);
+app.listen(3000);
