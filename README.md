@@ -1,5 +1,5 @@
 ## Summary
-Exploring ReactJS with JSPM and ES6  
+Exploring ReactJS with JSPM and ES6 - now with Material-UI
 
 ## Installation
 npm install  
