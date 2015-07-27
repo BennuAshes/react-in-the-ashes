@@ -19,7 +19,11 @@ System.config({
     "babel": "npm:babel-core@5.7.4",
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
+    "material-ui": "npm:material-ui@0.10.1",
     "react": "npm:react@0.13.3",
+    "github:jspm/nodelibs-assert@0.1.0": {
+      "assert": "npm:assert@1.3.0"
+    },
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.3.1"
     },
@@ -44,6 +48,9 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
+    "npm:assert@1.3.0": {
+      "util": "npm:util@0.10.3"
+    },
     "npm:babel-runtime@5.7.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
@@ -51,6 +58,9 @@ System.config({
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
+    },
+    "npm:classnames@1.2.2": {
+      "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
     "npm:core-js@0.9.18": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -80,7 +90,23 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "source-map": "npm:source-map@0.1.31"
     },
+    "npm:material-ui@0.10.1": {
+      "classnames": "npm:classnames@1.2.2",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "react": "npm:react@0.12.2",
+      "react-draggable2": "npm:react-draggable2@0.5.1",
+      "react-tap-event-plugin": "npm:react-tap-event-plugin@0.1.7"
+    },
     "npm:path-browserify@0.0.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react-tap-event-plugin@0.1.7": {
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "react": "npm:react@0.12.2"
+    },
+    "npm:react@0.12.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "envify": "npm:envify@3.4.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:react@0.13.3": {
