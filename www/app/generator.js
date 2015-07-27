@@ -1,10 +1,14 @@
 import React from 'react';
-
-var energyInterval;
+import mui from 'material-ui';
+var RaisedButton = mui.RaisedButton;
+//console.log('gen.js: ',mui,RaisedButton);
+var ThemeManager = new mui.Styles.ThemeManager();
 
 class Generator extends React.Component {
     constructor(props) {
+      
         super(props);
+        
         this.state = {
             energy:0
         };
@@ -13,16 +17,29 @@ class Generator extends React.Component {
         // To reiterate: this is not standard ES6 and is not needed for normal ES6 classes
         this.start = this.start.bind(this);
         this.stop = this.stop.bind(this);
+        // this.getChildContext = this.getChildContext.bind(this);
+        //this.childContextTypes = this.childContextTypes.bind(this);
     }
     
-    /*componentWillMount() {
-        
-    }*/
+    componentWillMount() {
+        // this.setState({energy:0});
+    }
+    componentWillUnmount() {
+        if(this.energyInterval)
+            clearInterval(this.energyInterval);
+    }
+    
+    getChildContext() {
+        return {
+          muiTheme: ThemeManager.getCurrentTheme()
+        };
+    }
+    
     render() {
         return <div>
             energy: {this.state.energy}
-            <button onClick={this.start}>start</button>
-            <button onClick={this.stop}>stop</button>
+            <RaisedButton label="start" onClick={this.start} />
+            <RaisedButton label="stop" onClick={this.stop} />
         </div>
     }
     
@@ -38,8 +55,14 @@ class Generator extends React.Component {
     }
     stop() {
         if(this.energyInterval)
-            this.energyInterval.cancel();
+            clearInterval(this.energyInterval);
     }
 }
 
+// static properties not supported
+// TODO: try a get/set with this name
+// that returns a module-level object?
+Generator.childContextTypes = {
+    muiTheme: React.PropTypes.object
+};
 export default Generator;
