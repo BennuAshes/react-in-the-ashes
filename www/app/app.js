@@ -1,9 +1,10 @@
 import React from 'react';
-import Generator from 'app/generator';
+import Container from 'app/components/Container.react';
+
 
 React.render(
-    <Generator />
-,document.getElementById('generator')
+    <Container />
+,document.getElementById('container')
 
 )
 

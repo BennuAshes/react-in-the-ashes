@@ -12,13 +12,18 @@ gulp.task('default',['start']);
 gulp.task('start',function() {
     var server = gls.new('server.js');
     server.start(); // .run(['./dist/server/app.js']);
-     
+    
+    
     gulp.watch('./www/index.html',function() {
         server.notify.apply(server,arguments);
     });
-    gulp.watch('./www/**',function() {
+    // TODO: combine these
+    
+    gulp.watch('./www/**/*.js',function() {
         server.notify.apply(server,arguments);
-    });    
+    });
+    
+       
     
     
 });

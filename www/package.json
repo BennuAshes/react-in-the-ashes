@@ -12,7 +12,9 @@
   "jspm": {
     "directories": {},
     "dependencies": {
+      "flux": "npm:flux@^2.0.3",
       "material-ui": "npm:material-ui@^0.10.1",
+      "node-event-emitter": "npm:node-event-emitter@^0.0.1",
       "react": "npm:react@0.13.3"
     },
     "devDependencies": {

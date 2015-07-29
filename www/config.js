@@ -19,10 +19,10 @@ System.config({
     "babel": "npm:babel-core@5.7.4",
     "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
+    "flux": "npm:flux@2.0.3",
     "material-ui": "npm:material-ui@0.10.1",
-    
+    "node-event-emitter": "npm:node-event-emitter@0.0.1",
     "react": "npm:react@0.13.3",
-    "react@0.12.2": "react",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
