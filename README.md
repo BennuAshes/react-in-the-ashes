@@ -1,5 +1,5 @@
 # Summary
-Exploring ReactJS with JSPM and ES6 - now with Flux and Material-UI
+Exploring ReactJS with JSPM and ES2015/16 - now with Flux and Material-UI
 
 # Installation
 npm install  
@@ -11,7 +11,7 @@ gulp
 
 # Explanation
 
-#### ES6/7
+#### ES2015/16
 It's the future of Web Development.  Class support and modules with import help clean things up without the need for any special syntax or libraries (beyond a potentional shim, or something like JSPM transpiling for you).
 
 #### JSPM
