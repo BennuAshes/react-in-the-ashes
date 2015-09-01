@@ -15,7 +15,8 @@
       "flux": "npm:flux@^2.0.3",
       "material-ui": "npm:material-ui@^0.10.1",
       "node-event-emitter": "npm:node-event-emitter@^0.0.1",
-      "react": "npm:react@0.13.3"
+      "react": "npm:react@0.13.3",
+      "react-router": "npm:react-router@^1.0.0-beta3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",

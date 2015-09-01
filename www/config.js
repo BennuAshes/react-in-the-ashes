@@ -23,11 +23,12 @@ System.config({
     "material-ui": "npm:material-ui@0.10.1",
     "node-event-emitter": "npm:node-event-emitter@0.0.1",
     "react": "npm:react@0.13.3",
+    "react-router": "npm:react-router@1.0.0-beta3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.3.1"
+      "buffer": "npm:buffer@3.4.1"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -61,6 +62,11 @@ System.config({
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
     },
+    "npm:buffer@3.4.1": {
+      "base64-js": "npm:base64-js@0.0.8",
+      "ieee754": "npm:ieee754@1.1.6",
+      "is-array": "npm:is-array@1.0.1"
+    },
     "npm:classnames@1.2.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
@@ -84,6 +90,10 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:invariant@2.1.0": {
+      "envify": "npm:envify@3.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
     "npm:jstransform@10.1.0": {
       "base62": "npm:base62@0.1.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -101,6 +111,12 @@ System.config({
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react-router@1.0.0-beta3": {
+      "invariant": "npm:invariant@2.1.0",
+      "keymirror": "npm:keymirror@0.1.1",
+      "qs": "npm:qs@2.4.1",
+      "warning": "npm:warning@1.0.2"
     },
     "npm:react-tap-event-plugin@0.1.7": {
       "process": "github:jspm/nodelibs-process@0.1.1",
@@ -143,6 +159,9 @@ System.config({
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:warning@1.0.2": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     }
   }
